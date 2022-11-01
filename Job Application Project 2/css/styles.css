@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #ccc;
+
+}
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+.job-form{
+  background-color: white;
+  border-radius: 10px;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+h1{
+  font-size: 48px;
+  font-family: 'Inter', sans-serif;
+}
+.web{
+  font-size: 28px;
+  color: #04175A;
+}
+.form-container{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+.form-control{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+input, textarea, select{
+  padding: 10px 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input:focus, textarea:focus, select:focus{
+  outline-color: red;
+}
+.button_container{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+button{
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  background-color: #F57328;
+  transition: 0.3s ease-in;
+}
+button:hover{
+  background-color: #ccc;
+  transition: 0.3s ease-out;
+  color: black;
+  border: 1px solid red;
+  cursor: pointer;
+}
+.address-control{
+  grid-column: 1 / span 2;
+}
+.address-control textarea{
+  width: 100%;
+}
